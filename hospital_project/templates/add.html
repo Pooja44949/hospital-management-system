@@ -1,0 +1,24 @@
+<h2>Add Patient</h2>
+
+<form method="post">
+ID: <input name="id"><br><br>
+Name: <input name="name"><br><br>
+Age: <input name="age"><br><br>
+Gender: <input name="gender"><br><br>
+Phone: <input name="phone"><br><br>
+
+Doctor:
+<select name="doctor">
+{% for d in doctors %}
+<option value="{{d[0]}}">{{d[1]}}</option>
+{% endfor %}
+</select><br><br>
+
+Date: <input type="date" name="date"><br><br>
+
+Diagnosis: <input name="diagnosis"><br><br>
+
+<input type="submit">
+</form>
+
+<a href="/">Back</a>
